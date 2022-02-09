@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Raleway|Reenie+Beanie);
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#header-nav {
+  background-color: #060606;
+  z-index: 2000;
+}
+#header-nav .container #logo {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#header-nav .container #links-div {
+  display: none;
+}
+#header-nav .container #links-div #links {
+  display: inline-block;
+}
+#header-nav .container #links-div #links li {
+  display: inline-block;
+}
+#header-nav .container #links-div #links li a {
+  color: white;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+#header-nav .container #links-div #links li a:hover {
+  color: #ffd500;
+}
+
+#mySidenav a {
+  background-color: #060606;
+  border: 1px solid #5ac8fa;
+  box-shadow: 2px 0 7px #5ac8fa;
+  text-align: center;
+  position: absolute;
+  left: -33vw;
+  transition: 0.3s;
+  padding: 17px;
+  width: 12.5em;
+  text-decoration: none;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+#mySidenav a a:hover {
+  left: -4.6875em;
+}
+#mySidenav #about {
+  top: 1.25em;
+}
+#mySidenav #blog {
+  top: 5em;
+}
+#mySidenav #contact {
+  top: 8.75em;
+}
+
+.hero-image {
+  background: -webkit-linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+  background: -o-linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+  background: -moz-linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+  background: linear-gradient(70deg, #ff6464 40%, #5ac8fa 40%);
+  min-height: 95vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /* main-container */
+}
+.hero-image #main-container {
+  height: 100%;
+  /* hero-text */
+  /* img-div */
+}
+.hero-image #main-container .hero-text {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+.hero-image #main-container .hero-text h3 {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.hero-image #main-container .hero-text h1 {
+  font-size: 3em;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+.hero-image #main-container .hero-text p {
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.hero-image #main-container .hero-text .spec-Btn {
+  background-color: #060606;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 700;
+  border-color: black;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  transition: 0.7s ease;
+  margin-bottom: 40px;
+  width: 15em;
+  display: none;
+}
+.hero-image #main-container .hero-text .spec-Btn:hover {
+  transform: scale(1.1);
+  color: #060606;
+  background-color: yellow;
+}
+.hero-image #main-container .hero-text .social-icons a {
+  color: white;
+  font-size: 1.7em;
+  transition: 0.7s ease;
+}
+.hero-image #main-container .hero-text .social-icons a i {
+  margin-right: 2vw;
+}
+.hero-image #main-container .hero-text .social-icons a i:hover {
+  transform: scale(1.05);
+  color: yellow;
+}
+.hero-image #main-container .main-img {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 15px;
+}
+.hero-image #main-container .main-img img {
+  display: none;
+  height: 33.75em;
+  width: 24.125em;
+}
+.hero-image #main-container .main-img img:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+/* hero-image */
+.services-back {
+  background-color: #5ac8fa;
+  margin: 2px 0;
+  padding: 70px 0;
+}
+.services-back h2 {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.services-back img {
+  width: 100%;
+}
+.services-back a {
+  color: black;
+}
+.services-back h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: underline;
+}
+.services-back .caption,
+.services-back h1 {
+  font-family: "Leckerli One", cursive;
+  font-size: 1.6em;
+  padding: 10px 10px 0 10px;
+}
+.services-back .date {
+  font-size: 0.75em;
+}
+.services-back .description {
+  font-size: 0.9em;
+  padding: 0 20px 20px 20px;
+  text-align: left;
+}
+.services-back .container {
+  perspective: 1000px;
+  display: inline-block;
+  margin: 3%;
+  width: 300px;
+  height: 200px;
+}
+.services-back .container:hover .flipper {
+  transform: rotateY(180deg);
+}
+.services-back .flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.services-back .front,
+.services-back .back {
+  background-color: white;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.services-back .front {
+  z-index: 2;
+  background-color: white;
+}
+.services-back .front p {
+  position: absolute;
+  width: 100%;
+  top: 75%;
+  background-color: #060606;
+  opacity: 0.6;
+  color: white;
+  padding: 2px 0;
+}
+.services-back .back {
+  transform: rotateY(180deg);
+  left: -23.5px;
+}
+.services-back #content {
+  text-align: center;
+}
+
+.projects-back {
+  padding: 50px 0;
+  background-color: black;
+  background: linear-gradient(0deg, black 0%, #5ac8fa 25%, #ff6464 79%, #060606);
+  background-size: 100% 600%;
+  min-height: 100%;
+  -webkit-animation: animation-bg 40s infinite;
+  animation: animation-bg 40s infinite;
+  animation-direction: alternate;
+  padding-bottom: 100px;
+  font-family: "Leckerli One", cursive;
+}
+.projects-back h2 {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 1em;
+  padding-top: 50px;
+}
+@-webkit-keyframes animation-bg {
+  0% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@keyframes animation-bg {
+  0% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+.projects-back .proj-card {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border-radius: 15px;
+  border: none;
+  background-color: white;
+}
+.projects-back .btn {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 110%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border-radius: 10px;
+  padding: 0.8em 1.7em;
+  border: none;
+  font-weight: bold;
+}
+.projects-back .proj-card:hover .btn {
+  opacity: 1;
+  top: 100%;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+.projects-back .proj-card:hover {
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.7);
+}
+.projects-back h5 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  font-size: 1.5em;
+  opacity: 0.3;
+  text-shadow: 1px 1px 2px black;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  font-family: "Leckerli One", cursive;
+}
+.projects-back .proj-card:hover h5 {
+  opacity: 1;
+  font-size: 2em;
+}
+.projects-back .btn:hover {
+  color: #060606;
+  border: none;
+}
+.projects-back .card-one a:hover {
+  background-color: #ffd500;
+}
+.projects-back .card-two a:hover {
+  background-color: #ffd500;
+}
+.projects-back .card-three a:hover {
+  background-color: #ffd500;
+}
+.projects-back .proj-card img {
+  filter: blur(0px);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border-radius: 15px;
+}
+.projects-back .proj-card:hover img {
+  filter: blur(3px);
+}
+
+.contacts-back {
+  background-color: #5ac8fa;
+  padding: 50px;
+}
+.contacts-back #contacts-container {
+  padding-top: 30px;
+  width: 70%;
+}
+.contacts-back #contacts-container h2 {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-weight: Bold;
+  margin-bottom: 60px;
+}
+.contacts-back #contacts-container .card {
+  overflow: hidden;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  box-shadow: 1px -1px 7px white;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+.contacts-back #contacts-container .card:hover {
+  transform: scale(1.1);
+}
+.contacts-back #contacts-container .card:hover i {
+  color: #ffd500;
+}
+.contacts-back #contacts-container .card h5 {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+.contacts-back #contacts-container .card .icon {
+  color: white;
+  font-size: 6em;
+  text-align: center;
+}
+.contacts-back #contacts-container .card p {
+  font-size: 1.2em;
+  font-weight: 450;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #060606;
+}
+.footer .social-icons {
+  margin-right: 5vw;
+}
+.footer .social-icons a {
+  color: white;
+  font-size: 1.4em;
+  padding-right: 0.3em;
+}
+.footer .social-icons a i:hover {
+  color: #ffd500;
+  transform: scale(1);
+}
+.footer .footer-title {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.footer .footer-title a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 12px;
+  }
+
+  #one-card {
+    width: 40%;
+  }
+
+  .projects-back #col {
+    width: 54%;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+
+  #mySidenav a:hover {
+    left: -8.1875em;
+  }
+
+  #one-card {
+    width: 50%;
+  }
+
+  .contacts-back #contacts-container {
+    width: 100%;
+  }
+
+  .projects-back .col {
+    width: 80%;
+  }
+}
+@media (max-width: 678px) {
+  #mySidenav a:hover {
+    left: -4.625em;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    font-size: 10px;
+  }
+
+  #mySidenav a {
+    left: -10.625em;
+    padding: 14.7px;
+  }
+
+  #mySidenav a:hover {
+    left: -2.1876em;
+  }
+
+  #one-card {
+    width: 100%;
+  }
+
+  .contacts-back #contacts-container {
+    width: 65%;
+  }
+}
+@media (max-width: 405px) {
+  body {
+    font-size: 9px;
+  }
+
+  .contacts-back #contacts-container {
+    width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  body {
+    font-size: px8;
+  }
+
+  #contacts-container {
+    width: 100%;
+  }
+
+  .contacts-back {
+    padding: 50px 10px 50px 10px;
+  }
+
+  .services-back {
+    padding: 50px 20px 50px 20px;
+  }
+
+  .projects-back {
+    padding: 50px 20px 50px 20px;
+  }
+
+  #mySidenav a:hover {
+    left: -2.1875em;
+  }
+
+  .projects-back .col {
+    width: 100%;
+  }
+
+  .projects-back #col {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 251px) {
+  body {
+    font-size: 6px;
+  }
+
+  .services-back {
+    padding: 0px 10px 0px 10px;
+  }
+
+  .projects-back {
+    padding: 0px 10px 0px 10px;
+  }
+
+  .contacts-back {
+    padding: 0px 0px 50px 0px;
+  }
+
+  #mySidenav a {
+    padding: 9px;
+  }
+}
+.avatar {
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+.avatar img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 105px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
